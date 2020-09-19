@@ -33,7 +33,7 @@ this.setState({password:event.target.value})
         <div>
           <label>
             Password
-            <input id="password" name="password" type="password" />
+            <input value={this.state.password} id="password" name="password" type="password" />
           </label>
         </div>
         <div>
