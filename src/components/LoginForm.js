@@ -23,7 +23,7 @@ this.setState({password:event.target.value})
     }
   render() {
     return (
-      <form>
+      <form  onSubmit={this.formSubmit}>
         <div>
           <label>
             Username
