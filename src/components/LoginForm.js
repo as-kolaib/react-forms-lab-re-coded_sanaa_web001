@@ -33,7 +33,9 @@ this.setState({password:event.target.value})
         <div>
           <label>
             Password
-            <input value={this.state.password} id="password" name="password" type="password" />
+            <input value={this.state.password} id="password" name="password" type="password" 
+            onChange={this.passwordChangeHandler}
+            />
           </label>
         </div>
         <div>
