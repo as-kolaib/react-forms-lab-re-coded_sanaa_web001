@@ -27,7 +27,7 @@ this.setState({password:event.target.value})
         <div>
           <label>
             Username
-            <input id="username" name="username" type="text" />
+            <input value={this.state.username} id="username" name="username" type="text" />
           </label>
         </div>
         <div>
