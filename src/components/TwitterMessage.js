@@ -9,7 +9,14 @@ class TwitterMessage extends React.Component {
       remainingChars:0
     };
   }
-
+ changeHandler=(event)=>{
+    // console.log(event.target.value.length);
+    if(event.target.value.length<=this.props.maxChars){
+      this.setState(({message:event.target.value,
+      remainingChars:event.target.value.length}))
+      
+    }
+  }
   render() {
     return (
       <div>
